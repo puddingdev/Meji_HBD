@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แกลเลอรีคู่รัก 💖</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+        }
+        .gallery figure {
+    text-align: center;
+    margin: 0;
+}
+        .gallery img {
+            width: 200px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: hotpink;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .back-btn:hover {
+            background-color: deeppink;
+        }
+        figcaption {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: hotpink; /* เปลี่ยนเป็นสีที่คุณต้องการ */
+    font-weight: bold;
+        }
+.play-button {
+            padding: 12px 24px;
+            background-color: #ff1493;
+            color: white;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .play-button:hover {
+            background-color: #ff69b4;
+            transform: scale(1.1);
+        }
+        .play-button:active {
+            background-color: #ff4500;
+            transform: scale(1);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>รวบของไอ่อ้วน 🐷</h1>
+    <div class="gallery">
+        <button class="play-button" onclick="playAudio()">เล่นเพลง 🎶</button>
+        <figure>
+            <img src="images/pic1.jpg" alt="รูป 1">
+            <figcaption>รูปคู่กับจิ๊ ไอ่แมวที่มันข่วนพี่🐈</figcaption>
+        </figure>
+        <figure>
+            <img src="images/pic2.jpg" alt="รูป 2">
+            <figcaption>นี่คือน้องมะม่วง นั่นเอง🥭</figcaption>
+        </figure>
+        <figure>
+            <img src="images/8.jpg" alt="รูป 3">
+            <figcaption>โอ้ววว เหม่งมันช่างจ้าาา☀️</figcaption>
+        </figure>
+        <figure>
+            <img src="images/1.jpg" alt="รูป 4">
+            <figcaption>แสงจ้าาาาา ก็สวย😗</figcaption>
+        </figure>
+        <figure>
+            <img src="images//2.jpg" alt="รูป 5">
+            <figcaption>โหลๆๆ ตื่นๆๆเช้าแล้ว💤</figcaption>
+        </figure>
+        <figure>
+            <img src="images/3.jpg" alt="รูป 6">
+            <figcaption>หนีบผม ระวงผมเสียนะจ๊ะ 😣</figcaption>
+        </figure>
+        <figure>
+            <img src="images/7.jpg" alt="รูป 10">
+            <figcaption>อุ้ยยย อันนี้น่าร้ากกก 💓</figcaption>
+        </figure>
+        <figure>
+            <img src="images/4.jpg" alt="รูป 7">
+            <figcaption>เดินข้างถนนมองทางบ้าง 🚗</figcaption>
+        </figure>
+        <figure>
+            <img src="images/5.jpg" alt="รูป 8">
+            <figcaption>ไอ่แมวน้อยนี่ใครห้ะ!! 🐈‍⬛</figcaption>
+        </figure>
+        <figure>
+            <img src="images/6.jpg" alt="รูป 9">
+            <figcaption>แปะๆ ตบๆ สวยจ้าสวย 👸</figcaption>
+        </figure>
+        
+        <figure>
+            <img src="images/pic3.jpg" alt="รูป 11">
+            <figcaption>อันนี้พี่ถ่ายเอง สวยสุดละ📸</figcaption>
+        </figure>
+        <figure>
+            <img src="images/9.jpg" alt="รูป 10">
+            <figcaption>อันนี้แถมตลกดีย์🤣(ขอรูปคู่รูป1)</figcaption>
+        </figure>
+    </div>
+    
+
+    <script>
+        function playAudio() {
+            var audio = document.getElementById('surpriseAudio');
+            audio.play();
+            audio.volume = 0.2; // ลดเสียง
+        }
+    </script>
+    
+    
+    <audio id="surpriseAudio">
+        <source src="song/birthday_song.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        function playAudio() {
+            var audio = document.getElementById('surpriseAudio');
+            audio.play();
+            audio.volume = 0.2; // ลดเสียง
+        }
+    </script>
+    <br>
+    <a href="index.html" class="back-btn">🔙 กลับไปหน้าแรก</a>
+</body>
+</html>
